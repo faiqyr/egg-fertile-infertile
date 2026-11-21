@@ -1,0 +1,63 @@
+# ── Python ────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ── Virtual Environment ───────────────────────────
+venv/
+env/
+ENV/
+.env
+.venv
+
+# ── Model Weights ─────────────────────────────────
+*.pt
+*.pth
+*.h5
+*.pkl
+*.onnx
+*.torchscript
+
+# ── Dataset Images ────────────────────────────────
+train/
+valid/
+test/
+data/
+datasets/
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tiff
+*.webp
+
+# ── Training Runs (contains local paths + images) ─
+runs/
+
+# ── Node.js ───────────────────────────────────────
+node_modules/
+frontend/dist/
+frontend/build/
+
+# ── IDE ───────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ── OS ────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Jupyter ───────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── Logs ──────────────────────────────────────────
+*.log
+logs/
