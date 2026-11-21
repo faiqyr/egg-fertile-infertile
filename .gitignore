@@ -24,21 +24,29 @@ ENV/
 *.onnx
 *.torchscript
 
-# ── Dataset Images ────────────────────────────────
+# ── Dataset Folders ───────────────────────────────
 train/
 valid/
 test/
 data/
 datasets/
+
+# ── Training Runs (contains local paths + images) ─
+runs/
+
+# ── Image files (dataset/training images) ─────────
+# Block images at root and common locations,
+# but allow frontend source assets explicitly.
 *.jpg
 *.jpeg
-*.png
 *.bmp
 *.tiff
 *.webp
 
-# ── Training Runs (contains local paths + images) ─
-runs/
+# Block PNG everywhere except frontend/src/assets/
+*.png
+!frontend/src/assets/*.png
+!frontend/public/*.png
 
 # ── Node.js ───────────────────────────────────────
 node_modules/
